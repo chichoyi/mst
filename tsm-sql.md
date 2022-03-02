@@ -1,3 +1,11 @@
+## mysql中字段类型各占几个字节：smallint、int、bigint、datetime、varchar(8)
+
+- smallint 2字节
+- int 4字节
+- bigint 8字节
+- datetime 8字节
+- varchar(8) 8*3字节
+
 ## ACID是靠什么保证的？
 
 - 原子性：由undolog日志来保证，它记录了要回滚的日志信息，事务回滚时撤销已经执行成功的sql

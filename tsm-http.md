@@ -373,9 +373,9 @@ dns不会暴露真实ip
 
 ## 跨域问题
 
-设置响应头允许跨域 Access-Control-Allow-Origin
-
-nginx做反代，请求不同项目，用路径方式区分，请求到nginx做拦截，转发给不同ip和端口
+- JSONP
+- 设置响应头允许跨域 Access-Control-Allow-Origin
+- nginx做反代，请求不同项目，用路径方式区分，请求到nginx做拦截，转发给不同ip和端口
 
 ## CSRF攻击原理
 
@@ -418,3 +418,15 @@ mysql和mysqli redis的connect 和pconnect
 脚本结束后连接就被释放
 
 脚本结束后连接不被释放
+
+## json和xml区别,各有什么优缺点
+
+* 可读性方面：基本相同，XML的可读性比较好；
+
+* 数据体积方面：JSON相对于XML来讲，数据体积小，传递的速度比较快；
+
+* 数据交互方面：JSON与javascript的交互更加方便，更容易解析处理，更好的数据交互；
+
+* 数据描述方面：XML对数据描述性比较好；
+
+* 传输速度方面：JSON的速度远远快于XML。
